@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000000; /* Black background */
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* White text for global readability */
+}
+
+.container {
+    background-color: #6C63FF; /* Cool purple */
+    display: grid;
+    gap: 1.25rem;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 0.625rem;
+    font-size: 1.2rem;
+    color: #ffffff; /* White text for contrast */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Subtle light shadow for depth */
+}
+
+#text {
+    height: 6.25rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    border: 1px solid #c3c3ff; /* Lighter purple */
+    resize: none;
+    padding: 0.5rem 0.625rem;
+    outline: none;
+    color: #000000; /* Black text for contrast */
+    background-color: #ffffff; /* White background for input */
+    transition: border-color 0.3s ease;
+}
+
+#text:focus {
+    border-color: #4839d1; /* Deep purple on focus */
+}
+
+button {
+    padding: 0.625rem;
+    background-color: #4839d1; /* Deep purple */
+    color: #ffffff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #372aad; /* Slightly lighter purple on hover */
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
