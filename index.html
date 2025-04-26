@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Text-to-Speech Converter</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="index.js" type="module" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <main class="container">
-        <h1>Text-to-Speech Converter</h1>
-        <form id="textToSpeechForm">
-            <label for="text" class="label">Enter text to convert:</label>
-            <textarea id="text" placeholder="Type something here..."></textarea>
-            <button id="speak" type="button">Speak</button>
-        </form>
+      <h1>Text-to-Speech Converter</h1>
+      <form id="textToSpeechForm">
+        <label for="text" class="label">Enter text to convert:</label>
+        <label for="fileInput" class="label">Or upload a .txt file:</label>
+        <input type="file" id="fileInput" accept=".txt" />
+        <textarea id="text" placeholder="Type something here..."></textarea>
+        <button id="speak" type="button">Speak</button>
+      </form>
     </main>
-</body>
+  </body>
 </html>
