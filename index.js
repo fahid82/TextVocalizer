@@ -15,3 +15,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+const fileInput = document.getElementById('fileInput');
+const textArea = document.getElementById('text');
+
+fileInput.addEventListener('change', () => {
+  const file = fileInput.files[0];
+  if (file && file.type === "text/plain") {
+    const reader = new FileReader();
+    reader.onload = () => {
+      textArea.value = reader.result;
+    };
+    reader.readAsText(file);
+  } else {
+    alert("Please upload a valid .txt file.");
+  }
+});
+
